@@ -1,0 +1,78 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Progress - Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏋️‍♀️ My Progress</h1>
+
+    <!-- Personal Information Form -->
+    <form id="progressForm">
+      <label>
+        Name:
+        <input type="text" id="name" placeholder="Enter your name" />
+      </label>
+      <label>
+        Current Weight (kg):
+        <input type="number" id="currentWeight" />
+      </label>
+      <label>
+        Target Weight (kg):
+        <input type="number" id="targetWeight" />
+      </label>
+      <label>
+        Weekly Workout Goal:
+        <input type="number" id="workoutGoalInput" placeholder="e.g. 4" value="4"/>
+      </label>
+    </form>
+
+    <!-- Progress Tracker -->
+    <div class="tracker">
+      <h2>Workout Progress</h2>
+      <progress id="progressBar" value="0" max="4"></progress>
+      <p id="progressText">0 / 4 workouts done</p>
+    </div>
+
+    <!-- Gender Selection -->
+    <form id="genderForm">
+      <label for="gender">Select your gender:</label>
+      <select id="gender" name="gender">
+        <option value="women" selected>Women</option>
+        <option value="men">Men</option>
+      </select>
+    </form>
+
+    <!-- Select Workout Days -->
+    <h2>Select Your Training Days:</h2>
+    <form id="daySelector">
+      <label><input type="checkbox" value="Monday"> Monday</label>
+      <label><input type="checkbox" value="Tuesday"> Tuesday</label>
+      <label><input type="checkbox" value="Wednesday"> Wednesday</label>
+      <label><input type="checkbox" value="Thursday"> Thursday</label>
+      <label><input type="checkbox" value="Friday"> Friday</label>
+      <label><input type="checkbox" value="Saturday"> Saturday</label>
+      <label><input type="checkbox" value="Sunday"> Sunday</label>
+      <button type="submit">Confirm Days</button>
+    </form>
+
+    <!-- Display Selected Workouts -->
+    <div id="loading" class="loading">Loading workout plan...</div>
+    <div id="workoutContainer"></div>
+
+    <!-- Reset Button -->
+    <button id="resetBtn">🔄 Reset Progress</button>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
