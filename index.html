@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -37,40 +37,34 @@
       <p id="progressText">0 / 4 workouts done</p>
     </div>
 
-    <!-- Gender Selection -->
+    <!-- Gender Selection Form -->
     <form id="genderForm">
-      <label for="gender">Select your gender:</label>
-      <select id="gender" name="gender">
-        <option value="women" selected>Women</option>
+      <label for="gender">Select Your Gender:</label>
+      <select id="gender">
+        <option value="women">Women</option>
         <option value="men">Men</option>
       </select>
     </form>
 
-    <!-- Select Workout Days -->
-    <h2>Select Your Training Days:</h2>
-    <form id="daySelector">
-      <label><input type="checkbox" value="Monday"> Monday</label>
-      <label><input type="checkbox" value="Tuesday"> Tuesday</label>
-      <label><input type="checkbox" value="Wednesday"> Wednesday</label>
-      <label><input type="checkbox" value="Thursday"> Thursday</label>
-      <label><input type="checkbox" value="Friday"> Friday</label>
-      <label><input type="checkbox" value="Saturday"> Saturday</label>
-      <label><input type="checkbox" value="Sunday"> Sunday</label>
-      <button type="submit">Confirm Days</button>
-    </form>
+    <!-- Button to Show/Hide Workout Plan -->
+    <button id="togglePlanBtn">Show Workout Plan</button>
 
-    <!-- Display Selected Workouts -->
-    <div id="loading" class="loading">Loading workout plan...</div>
-    <div id="workoutContainer"></div>
+    <!-- This section will hold the workout content -->
+    <div id="workoutProgramSection">
+      <div id="workoutContent"></div>
+    </div>
 
     <!-- Reset Button -->
-    <button id="resetBtn">🔄 Reset Progress</button>
+    <button id="resetBtn">Reset</button>
+    
+    <!-- Message display -->
     <div id="message"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

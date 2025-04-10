@@ -7,6 +7,7 @@ A simple and customizable fitness tracking app where users can select their gend
 - Choose fitness goal: Weight Loss or Muscle Gain
 - Mark daily workouts and track progress
 - Watch exercise tutorials via YouTube links
+- Toggle visibility of workout plans
 - Save progress with localStorage (no login needed!)
 
 ## 💻 Live Demo
@@ -23,7 +24,7 @@ A simple and customizable fitness tracking app where users can select their gend
 ## 📁 Project Structure
 - `index.html` - The main HTML structure of the app
 - `style.css` - Custom styling for the app
-- `script.js` - JavaScript to manage workout progress and user interactions
+- `script.js` - JavaScript to manage workout progress, gender selection, and toggle workout plans
 
 ## 🔧 Installation
 To run this project locally:
@@ -31,4 +32,5 @@ To run this project locally:
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/fitness-tracker.git
+
 
