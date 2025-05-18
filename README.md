@@ -1,3 +1,4 @@
+🏋️‍♀️ My Progress – Fitness Tracker App
 A responsive web app that helps users track and customize their workouts.
 Includes gender-based workout plans, exercise tutorials, and motivational content.
 
