@@ -12,7 +12,11 @@ JavaScript
 🚀 Live Demo
 👉 View Project
 
-📸 Screenshot
+## 🚀 Live Demo  
+👉 [View Project](https://mechrgui.github.io/fitness-tracker)
+
+## 📸 Screenshot  
+![App Screenshot](./screenshot.png)
 
 📌 Key Features
 Separate workout plans for women and men
